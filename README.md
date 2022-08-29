@@ -24,9 +24,11 @@ chmod +x hook.sh
 ## CMD - dehydrated
 
 ```
-dehydrated/dehydrated --cron --domain example.com --alias wildcard.example.com --challenge dns-01 --hook ~/dehydrated/hook.sh
+dehydrated/dehydrated --cron --domain example.com --alias example.com --challenge dns-01 --hook ~/dehydrated/hook.sh
 
 or
 
 dehydrated/dehydrated --cron --domain *.example.com --alias wildcard.example.com --challenge dns-01 --hook ~/dehydrated/hook.sh
 ```
+
+The hook.sh sends the variables (domain & token) to the node.js application (index.js).

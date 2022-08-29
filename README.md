@@ -29,7 +29,6 @@ Example:
 ## CLI - start-dehydrated:
 
 ```
-Example:
 ~/pfad/to/dehydrated/dehydrated --cron --domain example.com --alias example.com --challenge dns-01 --hook ~/pfad/to/dehydrated/hook.sh
 or
 ~/pfad/to/dehydrated/dehydrated --cron --domain *.example.com --alias wildcard.example.com --challenge dns-01 --hook ~/pfad/to/dehydrated/hook.sh

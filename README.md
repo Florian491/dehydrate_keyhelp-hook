@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/Florian491/dehydrate_keyhelp-hook/main/ho
 chmod +x hook.sh
 ```
 
-### Set deploy_challenge in hook.sh:
+### Change the deploy_challenge in hook.sh (line 26):
 
 ```
 /usr/bin/node ~/dehydrated/dehydrated_keyhelp/src/index.js --delay 90 --domain ${1} --token ${3} --config ~/dehydrated/dehydrated_keyhelp/config/domains.yml

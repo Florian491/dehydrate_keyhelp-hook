@@ -19,18 +19,26 @@ chmod +x hook.sh
 
 ```
 /usr/bin/node ~/pfad/to/dehydrated_keyhelp/src/index.js --delay 90 --domain ${1} --token ${3} --config ~/pfad/to/dehydrated_keyhelp/config/domains.yml
+```
 
+```
 Example:
 /usr/bin/node ~/dehydrated/dehydrated_keyhelp/src/index.js --delay 90 --domain ${1} --token ${3} --config ~/dehydrated/dehydrated_keyhelp/config/domains.yml
 ```
 
-## CMD - dehydrated
+## CLI - start-dehydrated:
 
 ```
-dehydrated/dehydrated --cron --domain example.com --alias example.com --challenge dns-01 --hook ~/dehydrated/hook.sh
-
+Example:
+~/pfad/to/dehydrated/dehydrated --cron --domain example.com --alias example.com --challenge dns-01 --hook ~/pfad/to/dehydrated/hook.sh
 or
+~/pfad/to/dehydrated/dehydrated --cron --domain *.example.com --alias wildcard.example.com --challenge dns-01 --hook ~/pfad/to/dehydrated/hook.sh
+```
 
+```
+Example:
+dehydrated/dehydrated --cron --domain example.com --alias example.com --challenge dns-01 --hook ~/dehydrated/hook.sh
+or
 dehydrated/dehydrated --cron --domain *.example.com --alias wildcard.example.com --challenge dns-01 --hook ~/dehydrated/hook.sh
 ```
 

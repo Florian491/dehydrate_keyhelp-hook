@@ -15,4 +15,4 @@ Download - Hook
 
 Set deploy_challenge:
 
-/usr/bin/node ~/dehydrated/dehydrated_keyhelp/src/index.js --delay 90 --domain ${1} --token ${3} --config ~/dehydrated/dehydrated_keyhelp/config/domains.yml
+"/usr/bin/node ~/dehydrated/dehydrated_keyhelp/src/index.js --delay 90 --domain ${1} --token ${3} --config ~/dehydrated/dehydrated_keyhelp/config/domains.yml"
